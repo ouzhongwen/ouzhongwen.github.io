@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://ouzhongwen.github.io/images/phy1.jpg">
 <meta property="og:image" content="http://ouzhongwen.github.io/images/phy2.jpg">
 <meta property="article:published_time" content="2021-01-16T09:50:22.000Z">
-<meta property="article:modified_time" content="2021-01-16T10:06:40.168Z">
+<meta property="article:modified_time" content="2021-01-17T02:19:46.349Z">
 <meta property="article:author" content="OuZhongwen">
 <meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
@@ -67,6 +67,8 @@
 	        
 				<li><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
 	        
+				<li><a href="/categories/%E5%90%8D%E8%A8%80">名言</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -99,7 +101,7 @@
 		<!-- 网易云音乐插件 -->
 
 	<div style="position:absolute; bottom:120px left:auto; width:85%">
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=521237529&auto=0&height=32"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1336789644&auto=0&height=32"></iframe>
 	</div>
 
 		</nav>
@@ -131,6 +133,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -151,11 +155,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
+					<li style="width: 25%"><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
+		        
+					<li style="width: 25%"><a href="/categories/%E5%90%8D%E8%A8%80">名言</a></li>
 		        
 				</ul>
 			</nav>
@@ -222,10 +228,10 @@
         Y_{l,m}(\theta ,\phi)=(-1)^m\sqrt{\dfrac{(2l+1)}{4\pi}\dfrac{(l-|m|)!}{(l+|m|)!}}P_l^m(\cos\theta)e^{im\phi}</script><p>为了更为直观的看到球谐函数所给给出的概率密度分布情况，也就是说粒子处于处于$(\theta+d\theta， \phi+d \phi)$内的概率密度为$|Y_{lm}|$，通过计算机绘图得到下面相对直观的图像：<br><img src="/images/phy1.jpg" alt="球谐函数图像"><br>那么以上就是氢原子角向波函数的求解过程。</p>
 <h3 id="径向波函数求解"><a href="#径向波函数求解" class="headerlink" title="径向波函数求解"></a>径向波函数求解</h3><p>前面我们已经给出了径向波函数所满足的微分方程，首先我们做一个代换，也就是$R(r)=\dfrac{\chi(r)}{r}$,将上式代入代上面的径向方程中，可以得到：</p>
 <script type="math/tex; mode=display">
-\dfrac{d\chi^2}{dr^2}+\Big[\dfrac{2
+\dfrac{d^2\chi}{dr^2}+\Big[\dfrac{2
 \mu}{\hbar^2}(E-U)-\dfrac{l(l+1)}{r^2}\Big]\chi=0</script><p>在方程中还有唯一一项即势能函数未给出,由于氢原子包含一个电子和质子，所以势能函数由库伦势所给出也就是$U(r)=\dfrac{-e^2}{4\pi \epsilon_0 r}$,将势能函数代入代原方程中即可以得到:</p>
 <script type="math/tex; mode=display">
-\dfrac{d\chi^2}{dr^2}+\Big[\dfrac{2
+\dfrac{d^2\chi}{dr^2}+\Big[\dfrac{2
 \mu}{\hbar^2}(E+\dfrac{e^2}{4\pi \epsilon_0 r})-\dfrac{l(l+1)}{r^2}\Big]\chi=0</script><p>现在我们的主要问题便是求解上面的方程，求解上面的方程可以先通过其渐进解,也就是$r \to 0,\infty$是方程近视解，此时可以得到试探解$\chi_l(r)=r^{l+1}e^{-\beta r}u_l(r),\beta=\sqrt{\dfrac{2m|E|}{\hbar^2}}$代入到上述方程中可以将方程化简为：</p>
 <script type="math/tex; mode=display">
 ru''_l(r)+[2(l+1)-2\beta]u'_{l}(r)-2\Big[(l+1)\beta-\dfrac{me^2}{\hbar^2}\Big]u_l(r)=0</script><p>再进行代换$\xi=2\beta r$,得到合流超几何方程：</p>
@@ -343,7 +349,7 @@ R_{nl}(r)=\sqrt{\Big(\dfrac{2}{na_{\mu}}\Big)^3\dfrac{(n-l-1)!}{2n[(n+l)!]^3}}\e
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://ouzhongwen.github.io/2021/01/16/%E6%B0%A2%E5%8E%9F%E5%AD%90%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://ouzhongwen.github.io/2021/01/16/%E6%B0%A2%E5%8E%9F%E5%AD%90%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -356,6 +362,15 @@ R_{nl}(r)=\sqrt{\Big(\dfrac{2}{na_{\mu}}\Big)^3\dfrac{(n-l-1)!}{2n[(n+l)!]^3}}\e
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/01/17/%E5%90%8D%E8%A8%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          名言
+        
+      </div>
+    </a>
   
   
     <a href="/2021/01/15/%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
@@ -521,11 +536,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">physics</a>
+                <a href="javascript:void(0)" class="js-tag color1">philosophy</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">picture</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">physics</a>
               </li>
             
             <div class="clearfix"></div>

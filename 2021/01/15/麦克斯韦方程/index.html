@@ -16,7 +16,7 @@
 <meta property="og:description" content="概要麦克斯韦方程组作为史上最为优美，伟大的公式之一，成功的统一了电场和磁场，更为重要的其简洁对称的形式对物理本质的反映，使得我们看到了自然界之美。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-15T13:11:11.000Z">
-<meta property="article:modified_time" content="2021-01-16T14:19:34.022Z">
+<meta property="article:modified_time" content="2021-01-17T04:02:09.525Z">
 <meta property="article:author" content="OuZhongwen">
 <meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
@@ -64,6 +64,8 @@
 	        
 				<li><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
 	        
+				<li><a href="/categories/%E5%90%8D%E8%A8%80">名言</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -96,7 +98,7 @@
 		<!-- 网易云音乐插件 -->
 
 	<div style="position:absolute; bottom:120px left:auto; width:85%">
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=521237529&auto=0&height=32"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1336789644&auto=0&height=32"></iframe>
 	</div>
 
 		</nav>
@@ -128,6 +130,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -148,11 +152,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
+					<li style="width: 25%"><a href="/categories/%E8%B6%B3%E8%BF%B9">足迹</a></li>
+		        
+					<li style="width: 25%"><a href="/categories/%E5%90%8D%E8%A8%80">名言</a></li>
 		        
 				</ul>
 			</nav>
@@ -199,11 +205,66 @@
 <script type="math/tex; mode=display">
  \textbf{F}=\dfrac{Qq}{4\pi\epsilon_0}\dfrac{\textbf{R}}{R^3}=q\textbf{E}\qquad \textbf{E}=\dfrac{Q}{4\pi\epsilon_0}\dfrac{\textbf{R}}{R}</script><p> 对于空间$V’$中的任意电荷分布在空间$V$中产生的电场可以由叠加原理得到，下面的积分表达式：</p>
 <script type="math/tex; mode=display">
-\textbf{E}(\textbf{r})=\int_{V'}\dfrac{\rho(\textbf{r}')}{4\pi\epsilon_0}\dfrac{\textbf{r}}{r^3}dV'</script><p>需要求电场的散度，我们对电场进行面积分得到：</p>
+\textbf{E}(\textbf{r})=\int_{V'}\dfrac{\rho(\textbf{r}')}{4\pi\epsilon_0}\dfrac{\textbf{r}}{r^3}dV'</script><p>需要求电场的散度和旋度，可以知道：</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
-\oint_{S} \textbf{E}\cdot d\textbf{S}&=\oint_{S}\int_{V'}\dfrac{\rho(\textbf{r}')}{4\pi\epsilon_0}\dfrac{\textbf{r}}{r^3}dV'\cdot d\textbf{S}=\int_{V'}\rho(\textbf{r}')\oint_S\nabla\cdot\delta(\textbf{r})   
-\end{aligned}</script>
+&\nabla \cdot \textbf{E}=\nabla \cdot\int_{V'}\dfrac{\rho(\textbf{r}')}{4\pi\epsilon_0}\dfrac{\textbf{r}}{r^3}dV'=\dfrac{1}{4\pi \epsilon_0}\int_{V'}\rho(\textbf{r}')\nabla \cdot\dfrac{\textbf{r}}{r^3}d V'=\dfrac{1}{4\pi \epsilon_0}\int_{V'}\rho(\textbf{r}')4\pi\delta(\textbf{r})dV'=\dfrac{\rho}{\epsilon_0}\\
+&\nabla\times \textbf{E}=\nabla \times\int_{V'}\dfrac{\rho(\textbf{r}')}{4\pi\epsilon_0}\dfrac{\textbf{r}}{r^3}dV'=\dfrac{1}{4\pi\epsilon_0}\int_{V'}\rho(\textbf{r}')\nabla\times\dfrac{\textbf{r}}{r^3}dV'=0
+\end{aligned}</script><p>从以上两个式子可以看到静电场为有源场，源点为电荷，同时静电场为无旋场，这使得静电场可以通过引入一个标势场$\phi$来描述:</p>
+<script type="math/tex; mode=display">
+\textbf{E}=-\nabla \phi</script><p>那么以上就是通过库仑定律这一个物理实在得出的结论。</p>
+<h3 id="法拉第电磁感应定律"><a href="#法拉第电磁感应定律" class="headerlink" title="法拉第电磁感应定律"></a>法拉第电磁感应定律</h3><p>前面我们考虑了静电场的情形，而一旦空间中存在变化的磁场，此时变化的磁场便会产生感应电场，其中法拉第电磁感应定律可以描述为：</p>
+<script type="math/tex; mode=display">
+\varepsilon=-\dfrac{d}{dt}\int_S \textbf{B}\cdot d\textbf{S}</script><p>考虑感应电动势是电场强度沿闭合回路的线积分，因此电磁感应定律可以写为：</p>
+<script type="math/tex; mode=display">
+\oint\textbf{E}\cdot d\textbf{l}=-\dfrac{d}{dt}\int_S \textbf{B}\cdot d\textbf{S}=-\int_S\dfrac{\partial \textbf{B}}{\partial t}\cdot d\textbf{S}</script><p>根据上面的积分形式，我们可以得到微分形式的电磁的旋度：</p>
+<script type="math/tex; mode=display">
+\nabla\times \textbf{E}=-\dfrac{\partial \textbf{B}}{\partial t}</script><p>这样我们就得到了一般形式下电场的散度和旋度公式，也就是麦克斯韦方程组中关于磁场的两个公式。</p>
+<h3 id="毕奥-萨伐尔定律"><a href="#毕奥-萨伐尔定律" class="headerlink" title="毕奥-萨伐尔定律"></a>毕奥-萨伐尔定律</h3><p>通过奥斯特电流实验我们便知道，电可以生磁，而磁和磁之间可以产生相互作用，简单的来说电流和磁场会发生相互作用，而这个相互作用由下面的公式给出：</p>
+<script type="math/tex; mode=display">
+d\textbf{F}=Id\textbf{l}\times \textbf{B}</script><p>上面的公式描述的是电流元在磁场中的受力，对于一般的情况需要进行积分，前面我们提到了电流可以生磁，而电流产生的磁场哟iiu毕奥-萨伐尔定律给出：</p>
+<script type="math/tex; mode=display">
+\textbf{B}(\textbf{r})=\dfrac{\mu_0}{4\pi}\int_{V}\dfrac{\textbf{J}(\textbf{r}')\times \textbf{r}}{r^3}dV'</script><p>同样我们给出磁场表达式后求磁场的旋度与散度，在这里我们不进行直接求解，而是将磁场的形式改变：</p>
+<script type="math/tex; mode=display">
+\textbf{B}(\textbf{r})=-\dfrac{\mu_0}{4\pi}\int_{V}\textbf{J}(\textbf{r}')\times \nabla\dfrac{1}{r}dV'=\nabla\times\Big[\dfrac{\mu_0}{4\pi}\int_V\dfrac{\textbf{J}(\textbf{r}')}{r}dV'\Big]</script><p>我们映引入一个矢势来描述磁场$\textbf{B}=\nabla\times \textbf{A}$,其中矢势由下式给出：</p>
+<script type="math/tex; mode=display">
+\textbf{A}=\dfrac{\mu_0}{4\pi}\int_V\dfrac{\textbf{J}(\textbf{r}')}{r}dV'</script><p>此时我们可以很容易的得到磁场的散度：</p>
+<script type="math/tex; mode=display">
+\nabla\cdot \textbf{B}=0</script><p>而磁场旋度：</p>
+<script type="math/tex; mode=display">
+\nabla\times\textbf{B}=\nabla\times(\nabla\times \textbf{A})=\nabla(\nabla\cdot\textbf{A})-\nabla^2\textbf{A}</script><p>现在我们可以具体的计算每一项的结果，其中：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\nabla^2\textbf{A}&=\dfrac{\mu_0}{4\pi}\int_V\textbf{J}(\textbf{r}')\nabla^2\dfrac{1}{r}dV'=-\dfrac{\mu_0}{4\pi}\int_V\textbf{J}(\textbf{r}')\nabla\cdot\dfrac{\textbf{r}}{r^3}dV'\\
+&=-\dfrac{\mu_0}{4\pi}\int_V\textbf{J}(\textbf{r}')4\pi\delta(\textbf{r})dV'=-\mu_0\textbf{J}  
+\end{aligned}</script><p>而第一项：</p>
+<script type="math/tex; mode=display">
+\nabla\cdot\textbf{A}=-\dfrac{\mu_0}{4\pi}\int_V\nabla'\cdot\left[\textbf{J}(\textbf{r}')\dfrac{1}{r}\right]dV'+\dfrac{\mu_0}{4\pi}\int_V\dfrac{1}{r}\nabla'\cdot\textbf{J}(\textbf{r}')dV'</script><p>其中第一项由变换公式可以化成面积分，若取面为无穷大，使得面上无电流，此时积分为零，而第二项便需要具体得考虑，如果我们假定电流恒定，根据电荷守恒定律何以知道每一处得电流密度不发生变换，此时电流得散度满足恒定电流条件$\nabla\cdot \textbf{J}=0$的，得到此时有:</p>
+<script type="math/tex; mode=display">
+\nabla\cdot \textbf{A}=0</script><p>这样综合上面可以得到：</p>
+<script type="math/tex; mode=display">
+\nabla\times \textbf{B}=\mu_0\textbf{J}</script><p>当然若我们考虑一个非恒定的情况也就是考虑在变化的情况下，此时有:</p>
+<script type="math/tex; mode=display">
+\nabla\cdot \textbf{J}=-\dfrac{\partial \rho}{\partial t}=\epsilon_0\nabla\cdot\dfrac{\partial\textbf{E}}{\partial t}</script><p>这样便存在:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\nabla(\nabla\cdot\textbf{A})&=\nabla\left(\dfrac{\mu_0}{4\pi}\int_V\dfrac{1}{r}\nabla'\cdot\textbf{J}(\textbf{r}')dV'\right)=\dfrac{\mu_0}{4\pi}\int_V\dfrac{\partial \textbf{E}}{\partial t} \nabla^2\dfrac{1}{r}dV'\\
+&=\dfrac{\mu_0}{4\pi}\int_V\dfrac{\partial \textbf{E}}{\partial t} (\textbf{r}')4\pi\delta(\textbf{r})dV'=\mu_o\epsilon_0\dfrac{\partial \textbf{E}}{\partial t}    
+\end{aligned}</script><p>实际上这一项便是麦克斯韦的位移电流，表示变化的电场可以产生磁场，此时得到磁场的旋度为；</p>
+<script type="math/tex; mode=display">
+\nabla\times\textbf{B}=\mu_0\textbf{J}+\mu_o\epsilon_0\dfrac{\partial \textbf{E}}{\partial t}</script><p>以上就是关于磁场的旋度与散度，这样我们就通过物理实在得到了麦克斯韦方程组得完整形式。</p>
+<h3 id="四维协变形式下得的电磁场理论"><a href="#四维协变形式下得的电磁场理论" class="headerlink" title="四维协变形式下得的电磁场理论"></a>四维协变形式下得的电磁场理论</h3><p>在四维情况下，需要满足相对性原理，也就协变性，所以需要引入一个电磁场张量以满足坐标面换下物理顶定律的不变性：</p>
+<script type="math/tex; mode=display">
+F_{\mu\nu}=\begin{bmatrix}
+0&B_3&-B_2&-\dfrac{i}{c}E_1\\
+-B_3&0&B_1&-\dfrac{i}{c}E_2\\
+B_2&-B_1&0&-\dfrac{i}{c}E_3\\
+\dfrac{i}{c}E_1&\dfrac{i}{c}E_2&\dfrac{i}{c}E_3&0
+\end{bmatrix}</script><p>在四维情况下麦克斯韦方程可以写为以下两个协变方程:</p>
+<script type="math/tex; mode=display">
+\dfrac{\partial F_{\mu\nu}}{\partial x_{\nu}}=\mu_0J_{u}\\
+\dfrac{F_{\mu\nu}}{\partial x_{\lambda}}+\dfrac{F_{\nu\lambda}}{\partial x_{\mu}}+\dfrac{F_{\lambda\mu}}{\partial x_{\nu}}=0</script><p>其中$x_\mu=(\textbf{X}，ict),J_\mu=(\textbf{\textbf{J}},ic\rho)$,在不同坐标系下，电磁场张量的变换为$F’_{\mu\nu}=a_{\mu\lambda}a_{\nu\tau}=F_{\lambda\tau}$。同样我们可以看到四维形式下麦克斯韦方程组的形式更为简洁对称。</p>
+
       
 
       
@@ -298,7 +359,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://ouzhongwen.github.io/2021/01/15/%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://ouzhongwen.github.io/2021/01/15/%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -350,7 +411,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">概要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%93%E4%BC%A6%E5%AE%9A%E5%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">库伦定律</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">概要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%93%E4%BC%A6%E5%AE%9A%E5%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">库伦定律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E6%8B%89%E7%AC%AC%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">法拉第电磁感应定律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%95%E5%A5%A5-%E8%90%A8%E4%BC%90%E5%B0%94%E5%AE%9A%E5%BE%8B"><span class="toc-number">4.</span> <span class="toc-text">毕奥-萨伐尔定律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E7%BB%B4%E5%8D%8F%E5%8F%98%E5%BD%A2%E5%BC%8F%E4%B8%8B%E5%BE%97%E7%9A%84%E7%94%B5%E7%A3%81%E5%9C%BA%E7%90%86%E8%AE%BA"><span class="toc-number">5.</span> <span class="toc-text">四维协变形式下得的电磁场理论</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -485,11 +546,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">physics</a>
+                <a href="javascript:void(0)" class="js-tag color1">philosophy</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">picture</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">physics</a>
               </li>
             
             <div class="clearfix"></div>
