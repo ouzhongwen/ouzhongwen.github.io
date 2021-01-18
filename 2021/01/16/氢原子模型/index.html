@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="person&#39;s page">
 <meta property="og:description" content="薛定谔方程氢原子作为一个典型的两体模型，在经典力学中我们知道两体问题具有严格解，而在量子力学中同样作为少数几个具有精确解的模型之一，因此氢原子具有重要的意义，在量子力学中要研究两个相互作用粒子的运动需要使用薛定谔方程，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://ouzhongwen.github.io/phy/phy1.jpg">
-<meta property="og:image" content="http://ouzhongwen.github.io/phy/phy2.jpg">
+<meta property="og:image" content="http://ouzhongwen.github.io/images/phy1.jpg">
+<meta property="og:image" content="http://ouzhongwen.github.io/images/phy2.jpg">
 <meta property="article:published_time" content="2021-01-16T09:50:22.000Z">
-<meta property="article:modified_time" content="2021-01-18T10:58:26.395Z">
+<meta property="article:modified_time" content="2021-01-18T11:01:13.573Z">
 <meta property="article:author" content="OuZhongwen">
 <meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://ouzhongwen.github.io/phy/phy1.jpg">
+<meta name="twitter:image" content="http://ouzhongwen.github.io/images/phy1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="person&#39;s page" type="application/atom+xml">
   
@@ -225,7 +225,7 @@
     \int |Y_{lm}|^2 d\tau=A^2\int |e^{im}p_l^m(\cos\theta)|^2\sin \theta d\theta d\phi=1\\
     A=(-1)^m\sqrt{\dfrac{(2l+1)}{4\pi}\dfrac{(l-|m|)!}{(l+|m|)!}}</script><p>此时可以写出球谐函数完整的表达式为:</p>
 <script type="math/tex; mode=display">
-        Y_{l,m}(\theta ,\phi)=(-1)^m\sqrt{\dfrac{(2l+1)}{4\pi}\dfrac{(l-|m|)!}{(l+|m|)!}}P_l^m(\cos\theta)e^{im\phi}</script><p>为了更为直观的看到球谐函数所给给出的概率密度分布情况，也就是说粒子处于处于$(\theta+d\theta， \phi+d \phi)$内的概率密度为$|Y_{lm}|$，通过计算机绘图得到下面相对直观的图像：<br><img src="/phy/phy1.jpg" alt="球谐函数图像"><br>那么以上就是氢原子角向波函数的求解过程。</p>
+        Y_{l,m}(\theta ,\phi)=(-1)^m\sqrt{\dfrac{(2l+1)}{4\pi}\dfrac{(l-|m|)!}{(l+|m|)!}}P_l^m(\cos\theta)e^{im\phi}</script><p>为了更为直观的看到球谐函数所给给出的概率密度分布情况，也就是说粒子处于处于$(\theta+d\theta， \phi+d \phi)$内的概率密度为$|Y_{lm}|$，通过计算机绘图得到下面相对直观的图像：<br><img src="/images/phy1.jpg" alt="球谐函数图像"><br>那么以上就是氢原子角向波函数的求解过程。</p>
 <h3 id="径向波函数求解"><a href="#径向波函数求解" class="headerlink" title="径向波函数求解"></a>径向波函数求解</h3><p>前面我们已经给出了径向波函数所满足的微分方程，首先我们做一个代换，也就是$R(r)=\dfrac{\chi(r)}{r}$,将上式代入代上面的径向方程中，可以得到：</p>
 <script type="math/tex; mode=display">
 \dfrac{d^2\chi}{dr^2}+\Big[\dfrac{2
@@ -252,7 +252,7 @@ R_{nl}(r)=\sqrt{\Big(\dfrac{2}{na_{\mu}}\Big)^3\dfrac{(n-l-1)!}{2n[(n+l)!]^3}}\e
 &R_{20}(r)=\dfrac{1}{(2a_0)^{3/2}}(2-r/a_0)\exp(-r/2a_0)\\
 &R_{21}=\dfrac{1}{(2a_0)^{3/2}}\dfrac{r}{\sqrt{3}a_0}\exp(-r/2a_0)\\
 &R_{30}=\dfrac{1}{(3a_0)^{3/2}}\Bigg[2-\dfrac{4r}{3a_0}+\dfrac{4}{27} \Big(\dfrac{r}{a_0}\Big)^2\Bigg]\exp(-r/3a_0)
-\end{aligned}</script><p>径向的波函数表现了电子在径向的概率的概率分布$|\chi_{nl}|^2=|rR_{nl}|^2$,利用计算机绘图的到的径向分布概率图为：<br><img src="/phy/phy2.jpg" alt="123"></p>
+\end{aligned}</script><p>径向的波函数表现了电子在径向的概率的概率分布$|\chi_{nl}|^2=|rR_{nl}|^2$,利用计算机绘图的到的径向分布概率图为：<br><img src="/images/phy2.jpg" alt="123"></p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过求解氢原子薛定谔方程，得到氢原子的径向和角向波函数，此时氢原子的状态便可以完全通过波函数所完全确定，而关于氢原子的其他可观测力学量(角动量,动量，位置)也可以得到，当然对于非对易算符所对应的力学量并不能同时确定，这是由不确定关系所决定的。还需要注意的一点是由于没有考虑到电子和质子的自旋自由度，所以上面得波函数并不能完全精确得确定氢原子状态，特别是处于磁场中得氢原子，一般来讲考电子自旋轨道耦合以及质子与电子的角动量耦合，还需要考虑氢原子的精细结构结构和超精细结构。</p>
 
       
