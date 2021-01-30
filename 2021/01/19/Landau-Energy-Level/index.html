@@ -16,8 +16,9 @@
 <meta property="og:description" content="AbstractConsider an electronic sports in Uinform mangnetic field,Unlike a classical particles,Can be used a wave function to descripte it behavior,in Uinform mangnetic field,which will performed quant">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-19T02:36:28.000Z">
-<meta property="article:modified_time" content="2021-01-19T02:43:49.945Z">
+<meta property="article:modified_time" content="2021-01-30T14:09:35.173Z">
 <meta property="article:author" content="OuZhongwen">
+<meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Personal page" type="application/atom+xml">
@@ -97,7 +98,7 @@
 		<!-- 网易云音乐插件 -->
 
 	<div style="position:absolute; bottom:120px left:auto; width:85%">
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1807536349&auto=0&height=32"></iframe>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=521237529&auto=0&height=32"></iframe>
 	</div>
 
 		</nav>
@@ -207,14 +208,23 @@
 \begin{aligned}
 &H=H_0+\omega_Ll_z\\
 &H_0=\dfrac{1}{2m}(P_x^2+P_y^2)+\dfrac{1}{2}m\omega_L^2(x^2+y^2)\\
-&l_z=xP_y-yP_x=-i\hbar\big(x\dfrac{\partial }{\partial y}-y\dfrac{\partial }{\partial x}\big)=-i\hbar\dfrac{\partial }{\partial \phi}
+&l_z=xP_y-yP_x=-i\hbar\left(x\dfrac{\partial }{\partial y}-y\dfrac{\partial }{\partial x}\right)=-i\hbar\dfrac{\partial }{\partial \phi}
 \end{aligned}</script><p>Call $\omega_L$ larmor frequency,and now we should find away to get form of the wave function,because we have select x-y plane.Considering symmetry, using polar coordinates and the wave function can be written as $\psi(r,\phi)$,substitute it into the Steady State Schrodinger equation,then we can get:</p>
 <script type="math/tex; mode=display">
         \hat{H}\psi(r,\phi )=E\psi(r,\phi)\\
-        -\dfrac{\hbar^2}{2m}\big(\dfrac{\partial^2 \psi}{\partial r^2}+\dfrac{1}{r}\dfrac{\partial\psi }{\partial r}+\dfrac{1}{r^2}\dfrac{\partial^2\psi}{\partial \phi^2} \big)+\dfrac{1}{2}m\omega_L^2r^2\psi-i\hbar\omega_L\dfrac{\partial }{\partial \phi}=E\psi</script><p>In order to solve this differential equation and use the way of seperation of variables. $\psi(r,\phi)=R(r)\Phi(\phi)$, and use the relationship $l_z\Phi(\phi)=k\Phi(\phi)$ or $-i\hbar\dfrac{\partial }{\partial \phi}\Phi(\phi)=k\Phi(\phi)$ .So convert the above formular into:</p>
+        -\dfrac{\hbar^2}{2m}\left
+        (\dfrac{\partial^2 \psi}{\partial r^2}+\dfrac{1}{r}\dfrac{\partial\psi }{\partial r}+\dfrac{1}{r^2}\dfrac{\partial^2\psi}{\partial \phi^2} \right)+\dfrac{1}{2}m\omega_L^2r^2\psi-i\hbar\omega_L\dfrac{\partial }{\partial \phi}=E\psi</script><p>In order to solve this differential equation and use the way of seperation of variables. $\psi(r,\phi)=R(r)\Phi(\phi)$, and use the relationship $l_z\Phi(\phi)=k\Phi(\phi)$ or $-i\hbar\dfrac{\partial }{\partial \phi}\Phi(\phi)=k\Phi(\phi)$ .So convert the above formular into:</p>
 <script type="math/tex; mode=display">
-\Big[-\dfrac{\hbar^2}{2m}\big(\dfrac{\partial^2 }{\partial r^2}+\dfrac{1}{r}\dfrac{\partial}{\partial r}+\dfrac{k^2}{r^2} \big)+\dfrac{1}{2}m\omega_L^2r^2\Big]R=(E-k\hbar\omega_L) R</script><p>Using natual unit system</p>
-
+\left[-\dfrac{\hbar^2}{2m}\left(\dfrac{\partial^2 }{\partial r^2}+\dfrac{1}{r}\dfrac{\partial}{\partial r}-\dfrac{k^2}{r^2} \right)+\dfrac{1}{2}m\omega_L^2r^2 \right]R(r)=(E-k\hbar\omega_L) R(r)</script><p>In order to solve the equation,consider $r \to\infty/0$,we can easily get two myopic equation:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&\left(\dfrac{d^2}{dr^2}-\alpha ^4r^2\right)R(r)=0\quad \alpha^2=\dfrac{m\omega_L}{\hbar}\\
+&\left(\dfrac{d^2}{dr^2}+\dfrac{1}{r}\dfrac{d}{dr}-\dfrac{k^2}{r^2}\right)R(r)=0    
+\end{aligned}</script><p>By solving the equations,we can get two myopic solutions,now we can  construct a solution it meet the equations of above at the same time.That is to say:</p>
+<script type="math/tex; mode=display">
+R(r)=e^{-\dfrac{\alpha^2 r^2}{2}}r^{|k|}u(r)</script><p>Then,Plug the solution into the equation receive:</p>
+<script type="math/tex; mode=display">
+\xi \dfrac{d^2u(\xi)}{d\xi^2}+\left(|m|+1-\xi\right)\dfrac{du(\xi)}{d\xi}-\left(\dfrac{|m|+1}{2}-\dfrac{E-m\hbar}{2\hbar \omega_L}\right)u(\xi)=0</script>
       
 
       
@@ -248,6 +258,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">physics</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -558,6 +579,18 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://scholar.google.com.hk/?hl=zh-CN" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>谷歌学术</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.runoob.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>菜鸟教程</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.w3cschool.cn/index.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>编程狮</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/null" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>鸠摩搜书</a>
             </li>
           
             <li class="search-li">
