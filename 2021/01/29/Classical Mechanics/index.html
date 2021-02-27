@@ -16,7 +16,7 @@
 <meta property="og:description" content="Eqationns of motion  当我们开始描述一个物理实在，我们应该问下面的一些问题，我们能够用什么来描述？如何去描述这样的物理是在？首先让我们考虑一个非常简单事实，也就是三维空间中的一个自由运动的粒子，在牛顿力学体系中，我们将粒子作为一个质点处理，某一时刻我们可以通过粒子的坐标，速度，加速度等物理量来完全的描这个物理实在的状态，而粒子下一刻的运动则完全由牛顿第二定律 $\textbf{">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-29T04:08:49.000Z">
-<meta property="article:modified_time" content="2021-02-05T09:47:33.690Z">
+<meta property="article:modified_time" content="2021-02-16T05:34:51.194Z">
 <meta property="article:author" content="OuZhongwen">
 <meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
@@ -209,13 +209,23 @@ L(q_1,q_2,,,q_n;\dot{q}_1,\dot{q}_2,,,\dot{q_n},t)</script><p>假使知道了系
 S=\int_{t_1}^{t_2}L(q_1,q_2,,,q_n;\dot{q}_1,\dot{q}_2,,,\dot{q_n},t) dt</script><p>可以看到作用量是一个泛函，此时作用量的最小值或者将极值泛函的变分为零时给出，也就是满足$\delta S=0$,从这个关系我们便可以得到系统拉格朗日函数所满足的方程:</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
-\delta S&=\delta\int_{t_1}^{t_2}L(q_1,q_2,,,q_n;\dot{q}_1,\dot{q}_2,,,\dot{q_n},t) dt=\int_{t_1}^{t_2}\sum\left(\dfrac{\partial L}{\partial q_i}\delta q_i+\dfrac{\partial L}{\partial\dot{q}_i}\delta \dot{q}_i\right)dt\\
+\delta S&=\delta\int_{t_1}^{t_2}L(q_1,q_2,,,q_n;\dot{q}_1,\dot{q}_2,,,\dot{q_n},t) dt\\
+&=\int_{t_1}^{t_2}\sum\left(\dfrac{\partial L}{\partial q_i}\delta q_i+\dfrac{\partial L}{\partial\dot{q}_i}\delta \dot{q}_i\right)dt\\
 &=\sum \dfrac{\partial L}{\partial \dot{q}_i}\delta q_i\Big|_{q^1}^{q^2}+\int_{t_1}^{t_2}\sum\left(\dfrac{\partial L}{\partial q_i}-\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{q_i}} \right)\delta q_i dt
 \end{aligned}</script><p>此时我们得到拉格朗日量满足的微分方程也就拉格朗日方程:</p>
 <script type="math/tex; mode=display">
 \dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{q}_i}-\dfrac{\partial L}{\partial q_i}=0</script><p>我们知道这个方程应该给出了系统的运动过程，也就是讲一旦我们给定了系统的拉氏量，也就给出了系统的运动过程，当然对于不同的拉氏量可能给出相同系统的运动，例如我们在拉氏量前乘以或加上任意常数因该不改变运动方程，当然这是最简单平庸的情形，考虑一般情形也就是:</p>
 <script type="math/tex; mode=display">
-L'(q,\dot{q},t)=L(q,\dot{q},t)+\dfrac{d}{dt}f(q,t)</script><p>这两个拉氏量$L’$和$L$将给出相同的运动方程，应该这</p>
+L'(q,\dot{q},t)=L(q,\dot{q},t)+\dfrac{d}{dt}f(q,t)</script><p>这两个拉氏量$L’$和$L$将给出相同的运动方程，当然下面给出证明:</p>
+<script type="math/tex; mode=display">
+\dfrac{d}{dt}\dfrac{\partial L'}{\partial \dot{q}_i}-\dfrac{\partial L'}{\partial q_i}=\dfrac{d}{dt}\dfrac{\partial L}{\partial \dot{q}_i}-\dfrac{\partial L}{\partial q_i}+\left(\dfrac{d}{dt}\dfrac{\partial }{\partial \dot{q}_i} -\dfrac{\partial}{\partial q_i}\right)\dfrac{df}{dt}</script><p>若要两个拉氏量等价，即要证明$df/dt$的拉格朗日方程恒等于零，一方面可以直接证明:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\dfrac{d}{dt}\dfrac{\partial }{\partial \dot{q}_i}\dfrac{df}{dt}&=\sum_{i} \dfrac{\partial^2f}{\partial q_i\partial q_k}+\dfrac{\partial^2f}{\partial q_i\partial t}\\
+\dfrac{\partial }{\partial {q}_i}\dfrac{df}{dt}&=\sum_{i} \dfrac{\partial^2f}{\partial q_k\partial q_i}+\dfrac{\partial^2f}{\partial t\partial q_i}
+\end{aligned}</script><p>可以看到两个式子相等，这样证明了df/dt的拉个朗日量恒为零，另一种方法便是直接证明泛函 $S=\int_{t_1}^{t_2}\dfrac{df}{dt}dt$  的变分为零 $\delta S=0$,  这种证明方式也是相对直接的。</p>
+<p>现在我们得到了方程的形式，并且进行了讨论,现在的问题是运动过程中状态量即拉氏量的具体形式，这是下接下来我们需要回答的问题。</p>
+<!-- 根据狭义相对论我们知道宏观低速的情况下，伽利略变换依旧成立，这也是经典力学基石 -->
 <h3 id="Low-of-conservation"><a href="#Low-of-conservation" class="headerlink" title="Low of conservation"></a>Low of conservation</h3><h3 id="The-integral-of-the-motional-equation"><a href="#The-integral-of-the-motional-equation" class="headerlink" title="The integral  of the motional equation"></a>The integral  of the motional equation</h3><h3 id="Canonical-equation"><a href="#Canonical-equation" class="headerlink" title="Canonical equation"></a>Canonical equation</h3><h3 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h3><p>Notice:In this article，my main reference is  Landau’s Mechanics。So you can read carefully the Mechnics of Landau.</p>
 
       
