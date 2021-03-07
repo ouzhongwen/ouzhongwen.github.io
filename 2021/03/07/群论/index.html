@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="http://ouzhongwen.github.io">
   <title>群论 | Personal page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="说明在数学和抽象代数中，群论研究名为群的代数结构。群在抽象代数中具有基本的重要地位：许多代数结构，包括环、域和向量空间等可以看作是在群的基础上添加新的运算和公理而形成的。群的概念在数学的许多分支都有出现，而且群论的研究方法也对抽象代数的其它分支有重要影响。群论的重要性还体现在物理学和化学的研究中，因为许多不同的物理结构，如晶体结构和氢原子结构可以用群论方法来进行建模。于是群论和相关的群表示论在物理">
+<meta property="og:type" content="article">
 <meta property="og:title" content="群论">
 <meta property="og:url" content="http://ouzhongwen.github.io/2021/03/07/%E7%BE%A4%E8%AE%BA/index.html">
 <meta property="og:site_name" content="Personal page">
+<meta property="og:description" content="说明在数学和抽象代数中，群论研究名为群的代数结构。群在抽象代数中具有基本的重要地位：许多代数结构，包括环、域和向量空间等可以看作是在群的基础上添加新的运算和公理而形成的。群的概念在数学的许多分支都有出现，而且群论的研究方法也对抽象代数的其它分支有重要影响。群论的重要性还体现在物理学和化学的研究中，因为许多不同的物理结构，如晶体结构和氢原子结构可以用群论方法来进行建模。于是群论和相关的群表示论在物理">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-07T11:32:43.000Z">
-<meta property="article:modified_time" content="2021-03-07T11:32:43.890Z">
+<meta property="article:modified_time" content="2021-03-07T11:36:42.904Z">
 <meta property="article:author" content="OuZhongwen">
+<meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Personal page" type="application/atom+xml">
@@ -190,7 +193,131 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在数学和抽象代数中，群论研究名为群的代数结构。群在抽象代数中具有基本的重要地位：许多代数结构，包括环、域和向量空间等可以看作是在群的基础上添加新的运算和公理而形成的。群的概念在数学的许多分支都有出现，而且群论的研究方法也对抽象代数的其它分支有重要影响。群论的重要性还体现在物理学和化学的研究中，因为许多不同的物理结构，如晶体结构和氢原子结构可以用群论方法来进行建模。于是群论和相关的群表示论在物理学和化学中有大量的应用。<br><a id="more"></a></p>
+<h2 id="群的基本概念"><a href="#群的基本概念" class="headerlink" title="群的基本概念"></a>群的基本概念</h2><h3 id="群的基本"><a href="#群的基本" class="headerlink" title="群的基本"></a>群的基本</h3><h4 id="群的定义"><a href="#群的定义" class="headerlink" title="群的定义"></a>群的定义</h4><ul>
+<li>封闭性:$f,g\in G$若$h=fg$,则$h\in G$.</li>
+<li>结合律:对任意$f,g,h\in G$,都有$(fg)h=f(gh)$.</li>
+<li>单位元素:由$e \in G$，对任意$h\in G$有$ef=fe=f$.</li>
+<li>逆元素：任意$f\in G$,存在唯一的$f^{-1}\in G$,使得$f^{-1}f=ff^{-1}=e$.<h4 id="阿贝尔群"><a href="#阿贝尔群" class="headerlink" title="阿贝尔群"></a>阿贝尔群</h4>对任意$f,g\in G$,满足$fg=gf$，则称G为阿贝尔群.<h4 id="重排定理"><a href="#重排定理" class="headerlink" title="重排定理"></a>重排定理</h4>$G=\{g_\alpha\}$,其中$u\in G$,当$\alpha$qu’bian</li>
+</ul>
+<h3 id="子群与陪集"><a href="#子群与陪集" class="headerlink" title="子群与陪集"></a>子群与陪集</h3><h4 id="子群的定义"><a href="#子群的定义" class="headerlink" title="子群的定义"></a>子群的定义</h4><p>设$H$是群$G$的一个子集，对群$G$同样的乘法运算，$H$也构成一个群，称$H$是$G$的子群，记为$H \subset G$,其虫咬条件为：</p>
+<ul>
+<li>$h_\alpha,h_\beta \in H,\text{则}                    h_\alpha h_\beta\in H$.</li>
+<li>$h_\alpha \in H\text{则}h_\alpha^{-1}\in H$.</li>
+</ul>
+<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>$n$阶循环群是由元素$a$的幂$a^k$组成，$k=1,2,…,n$,有$a^n=e$,记为：</p>
+<script type="math/tex; mode=display">
+z_n=\{a,a^2,...,a^k=e\}</script><h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><h4 id="陪集定理"><a href="#陪集定理" class="headerlink" title="陪集定理"></a>陪集定理</h4><p>群$H\subset G$,其中$H={h_\alpha}$，有$g\in G,g\notin H$,可生成左陪集:</p>
+<script type="math/tex; mode=display">gH=\{gh_\alpha|h_\alpha\in H\}</script><p>以及右配集:</p>
+<script type="math/tex; mode=display">
+Hg=\{h_\alpha|h_\alpha \in H\}</script><h4 id="拉格朗日定理"><a href="#拉格朗日定理" class="headerlink" title="拉格朗日定理"></a>拉格朗日定理</h4><p>有限群的子群的阶，等于该有限群阶的因子:</p>
+<script type="math/tex; mode=display">
+\text{群}G\text{阶数}n=
+(\text{子群}H\text{的阶}m)\times j</script><ul>
+<li>阶为素数的群没有非平庸子群。</li>
+<li>拉格朗日定理提供了把群$G$分割为不相交子集的方法.</li>
+</ul>
+<h3 id="类与不变子群"><a href="#类与不变子群" class="headerlink" title="类与不变子群"></a>类与不变子群</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p>其中$f,h\in G$,存在$g\in G$,使得$gfg^{-1}=h$,称$h$和$f$共轭，记为$h\sim f$.</p>
+<ul>
+<li>共轭具有对称性,当$h\sim f$,则$f\sim g$,且$f\sim f$.</li>
+<li>共轭传递性,当$f_1\sim h,f_2\sim h$,则有$f_1\sim f_2$.</li>
+</ul>
+<h4 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h4><p>群$G$的所有相互共轭的元素集合组成$G$的一个类:</p>
+<script type="math/tex; mode=display">
+f\text{类}=\{f'|f'=g_afg_a^{-1},g_a\in G\}</script><ul>
+<li>群的单位元素$e$自成一类.</li>
+<li>阿贝尔群的每个元素自成一类.</li>
+<li>设元素$f$的阶数为$m$，则$f$类所有元素的阶都是$m$.</li>
+</ul>
+<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>有限群的每类元素的个数等于群阶的因子.</p>
+<script type="math/tex; mode=display">
+g\text{类元素的个数}=\dfrac{G\text{的阶}}{H^g的阶}</script><h4 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h4><p>设$H$和$K$是群$G$的两个子群，若$g\in G$,使得:</p>
+<script type="math/tex; mode=display">
+K=gHg^{-1}={k=ghg^{-1}|h\in H}</script><p>称$H$是$K$的共轭子群.</p>
+<h4 id="定义-5"><a href="#定义-5" class="headerlink" title="定义"></a>定义</h4><p>设$H$是$G$的子群，若对任意$g\in G,h_a\in H$,有$gh_ag^{-1}\in H$,即如果$H$包含元素$h_a$,则它将包含所有与$h_a$同类的元素，称$H$是$G$的不变子群.</p>
+<h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><p>设$H$是$G$的不变子群，对任意固定元素$f\in G$ 在$h_a$取遍$H$的所有群元时，乘积$fh_af^{-1}$一次并且仅仅一次给出$H$的所有元素.</p>
+<h4 id="定义-6"><a href="#定义-6" class="headerlink" title="定义"></a>定义</h4><p>设群$G$的不变子群$H$生成的陪集串为$H,g_1H,g_2H…,g_aH,…$，把其中的每一个陪集看成一个新的元素，并由两个陪集中元素相乘得另一个陪集得元素，定义新元素间的乘法规则.</p>
+<script type="math/tex; mode=display">
+g_ih_\alpha g_jh_\beta=g_kh_\delta\to f_if_j=f_k</script><p>这样得到的群$\{f_,f_1,f_2…f_i,…\}$,称为不变子群$H$的商群，记为$G/H$,事实上商群$G/H$与群$\{H,g_1H,g_2H…,g_aH,…\}$同构.</p>
+<h3 id="群的同构与同态"><a href="#群的同构与同态" class="headerlink" title="群的同构与同态"></a>群的同构与同态</h3><h4 id="同构映射定义"><a href="#同构映射定义" class="headerlink" title="同构映射定义"></a>同构映射定义</h4><p>若从群$G$到群$F$上，存在一个一一对应的满映射$\Phi$,并且$\Phi$保持映射的基本运算规律不变，即满足$G$中的两个元素乘积的映射，等于两个元素映射的乘积，则称$G$与$F$同构记为$G\cong F$,映射$\Phi$为同构映射.</p>
+<ul>
+<li>两个同构的群具有完全相同的群结构，作为抽象的群来讲，两个同构的群没有任何区别.</li>
+</ul>
+<h4 id="同态映射的定义"><a href="#同态映射的定义" class="headerlink" title="同态映射的定义"></a>同态映射的定义</h4><p>存在一个从群$G$到$F$上的满映射$\Phi$,$\Phi$保持群的基本运算规律不变，则称$G$与$F$同态记为$G\sim F$，映射$\Phi$为同态映射.</p>
+<ul>
+<li>同构是特殊的同态.</li>
+<li>同构一定同态，同态不一定同构.</li>
+</ul>
+<h4 id="同态核定义"><a href="#同态核定义" class="headerlink" title="同态核定义"></a>同态核定义</h4><p>群$G$与群$F$同态，$G$中与$F$的单位元素$f_0$对应的元素集合$H=\{h_a\}$,称为同态核.</p>
+<h4 id="同态核定理"><a href="#同态核定理" class="headerlink" title="同态核定理"></a>同态核定理</h4><p>群$G$与群$F$同态，则有：</p>
+<ul>
+<li>同态核$H$是群$G$的不变子群.</li>
+<li>商群$G/H$与$F$同构.</li>
+</ul>
+<h4 id="自同构映射定义"><a href="#自同构映射定义" class="headerlink" title="自同构映射定义"></a>自同构映射定义</h4><p>群$G$到自身的同构映射$\nu$,称为$G$的自身同构映射:</p>
+<script type="math/tex; mode=display">
+\nu:G\to G</script><p>即对任意$g_a\in G$,有$\nu(g_a)=g_\beta\in G$<br>,保持乘法规律不变$\nu(g_ag_\beta)=\nu(g_a)\nu(g_\beta)$.</p>
+<ul>
+<li>自同构映射将单位元素映射为单位元素.</li>
+<li>把互逆元素映射为互逆元素.</li>
+</ul>
+<h4 id="自同构群定义"><a href="#自同构群定义" class="headerlink" title="自同构群定义"></a>自同构群定义</h4><p>定义两个自同构映射$\nu_1,\nu_2$<br>的乘积$\nu_1\nu_2$为先实行$\nu_2$,在实施$\nu_2$.每一格个自同构$\nu$有逆$\nu^{-1}$，于是群$G$的自同构映射$\nu$构成一个群，称为$G$的自同构群记为$A(G),Aut(G)$.</p>
+<ul>
+<li><p>若存在映射$u\in G$,即对$g_a\in G$,有:</p>
+<script type="math/tex; mode=display">
+u(g_a)=ug_au^{-1}</script><p>称$u$是$G$的内自同构映射.</p>
+</li>
+<li><p>群$G$的所有内自同构群$u$构成一个群称为内自同构群记为$I(G)$或$In(G)$.</p>
+</li>
+<li><p>内自同构群$I(G)$是自同构群$A(G)$的不变子群.</p>
+<h3 id="变换群"><a href="#变换群" class="headerlink" title="变换群"></a>变换群</h3><h4 id="置换定义"><a href="#置换定义" class="headerlink" title="置换定义"></a>置换定义</h4><p>被变换对象$X=\{x,y,z,…\}$,$X$上的置换$f$是将$X$映入自身的一一满射，$f：X\to X$,即对任意$x\in X$,有$f(x)=y\in X$,且$f$有$f^{-1}$,$f^{-1}(y)=x$.则称$f$为置换.</p>
+</li>
+</ul>
+<h4 id="定义-7"><a href="#定义-7" class="headerlink" title="定义"></a>定义</h4><p>设$X$上两个置换$f,g$的乘积$fg$先对$X$先实现置换$g$,再实施$f$,即对任意$x\in X$,有$fg(x)\in f(g(x))$,$X$的全体置换在此乘法下构成一个群，称为$X$上的一个完全对称群，记为$S_X={f,g,…}$,恒等置换$e$作为单位元素，置换$f$与其逆置换$f^{-1}$为$S_X$的互逆元素.</p>
+<ul>
+<li>$X$的完全对称群$S_X$的任何一个子群，是$X$的一个对称群，也称为$X$上的交换群.</li>
+<li>当$X$有$n$个元素时，$X$的完全对称群$S_X$就是$n$个元素的置换群$S_n$，含有$n!$个元素.</li>
+</ul>
+<h4 id="凯莱定理"><a href="#凯莱定理" class="headerlink" title="凯莱定理"></a>凯莱定理</h4><p>群$G$同构于$G$的完全对称群$S_G$的一个子群，当$G$是$n$阶的有限群时，$G$同构于$S_n$的一个子群.</p>
+<h4 id="轨道定义"><a href="#轨道定义" class="headerlink" title="轨道定义"></a>轨道定义</h4><p>设$G=\{f,g,h,…\}$是$X=\{x,y,z,…\}$的一个变换群，如果$X$中的两个元素$x$和$y$,有$g\in G$,使得$gx=y$,则称$x$是$G$等价于元素$y$，称$x$等价于$y$,记为$x\sim y$.</p>
+<ul>
+<li>等价具有对称性,若$x\sim y$,则$y\sim z$.</li>
+<li>等价具有传递性,若$x\sim y,y\sim z$,则$x\sim z$.</li>
+<li>由$X$中的全部与$x$等价点组成的轨道称为含$x$的$G$轨道,即$\{gx|g\in G\}$.</li>
+<li>$X$的$G$不变子集$Y$,是指$X$的子集$Y$,在变换群$G$的作用下，不会变到$Y$外面.</li>
+</ul>
+<h4 id="迷向子群的定义"><a href="#迷向子群的定义" class="headerlink" title="迷向子群的定义"></a>迷向子群的定义</h4><p>设$G$是$X$上的变换群，$x\in X$,$G$的子群$G^x$保持$x$不变：</p>
+<script type="math/tex; mode=display">
+G^x=\{h\in G|hx=x\}</script><p>$G^x$称为$G$对$x$的迷向子群.</p>
+<h4 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h4><p>设$C^x$是$C$对$x$的迷向子群，则$C^x$的每一个左陪集，把点$x$映射为$X$中的一个特定点$y$,也就是说，含$x$的$G$轨道上的点，和$C^x$的左陪集间具有一一对应的关系.</p>
+<ul>
+<li>设$G$是$n$阶有限群，$G^x$左陪集的个数，就是含$x$的$G$轨道中点的个数，设$G^x$的阶数为$n(G^x)$,则含$x$的$G$轨道中共有$n/n(G^x)$个点.</li>
+</ul>
+<h3 id="群的直积与半直积"><a href="#群的直积与半直积" class="headerlink" title="群的直积与半直积"></a>群的直积与半直积</h3><h2 id="群表示论的基础"><a href="#群表示论的基础" class="headerlink" title="群表示论的基础"></a>群表示论的基础</h2><h3 id="群表示"><a href="#群表示" class="headerlink" title="群表示"></a>群表示</h3><h4 id="线性空间（向量空间）定义"><a href="#线性空间（向量空间）定义" class="headerlink" title="线性空间（向量空间）定义"></a>线性空间（向量空间）定义</h4><p>在数域$K$(实数域$R$或复数域$C$)上的向量集合$\{x,y,z,…\}=V$,向量的加法和乘法具有封闭性:</p>
+<ul>
+<li>加法<ul>
+<li>$x+y=y+x$</li>
+<li>$x+(y+z)=(x+y)+z$</li>
+<li>单位元素$0$</li>
+<li>任意元素$x$的逆元$-x$</li>
+</ul>
+</li>
+<li>乘法<ul>
+<li>$1\cdot x=x$</li>
+<li>$(ab)x=a(bx)$</li>
+<li>$a(x+y)=ax+ay$</li>
+<li>$(a+b)x=ax+bx$</li>
+</ul>
+</li>
+</ul>
+<h4 id="线性变换定义"><a href="#线性变换定义" class="headerlink" title="线性变换定义"></a>线性变换定义</h4><p>设$V$是数域$K$上的线性空间，线性变换$A$是将$V$映射入$V$的线性映射，即对$x,y\in V,a \in K$,存在：</p>
+<script type="math/tex; mode=display">
+    A:V\to V,A(x)\in V\\
+    A(ax+y)=aA(x)+A(y)</script><p>设$A$和$B$是从$V\to V$的线性变换，可以定义线性变换的数乘、加法、和乘法为:</p>
+<script type="math/tex; mode=display">
+(aA)(x)=a(A(X)\\
+(A+B)(x)=A(x)+B(x)\\
+(AB)(x)=A(B(x))</script>
       
 
       
@@ -224,6 +351,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">physics</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -317,7 +455,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BE%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.</span> <span class="toc-text">群的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%A4%E7%9A%84%E5%9F%BA%E6%9C%AC"><span class="toc-number">2.1.</span> <span class="toc-text">群的基本</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.1.1.</span> <span class="toc-text">群的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%BF%E8%B4%9D%E5%B0%94%E7%BE%A4"><span class="toc-number">2.1.2.</span> <span class="toc-text">阿贝尔群</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E6%8E%92%E5%AE%9A%E7%90%86"><span class="toc-number">2.1.3.</span> <span class="toc-text">重排定理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%90%E7%BE%A4%E4%B8%8E%E9%99%AA%E9%9B%86"><span class="toc-number">2.2.</span> <span class="toc-text">子群与陪集</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%90%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.2.1.</span> <span class="toc-text">子群的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">2.2.2.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-number">2.2.3.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%99%AA%E9%9B%86%E5%AE%9A%E7%90%86"><span class="toc-number">2.2.4.</span> <span class="toc-text">陪集定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86"><span class="toc-number">2.2.5.</span> <span class="toc-text">拉格朗日定理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E4%B8%8E%E4%B8%8D%E5%8F%98%E5%AD%90%E7%BE%A4"><span class="toc-number">2.3.</span> <span class="toc-text">类与不变子群</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-2"><span class="toc-number">2.3.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-3"><span class="toc-number">2.3.2.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%90%86"><span class="toc-number">2.3.3.</span> <span class="toc-text">定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-4"><span class="toc-number">2.3.4.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-5"><span class="toc-number">2.3.5.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%90%86-1"><span class="toc-number">2.3.6.</span> <span class="toc-text">定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-6"><span class="toc-number">2.3.7.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%A4%E7%9A%84%E5%90%8C%E6%9E%84%E4%B8%8E%E5%90%8C%E6%80%81"><span class="toc-number">2.4.</span> <span class="toc-text">群的同构与同态</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%9E%84%E6%98%A0%E5%B0%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.4.1.</span> <span class="toc-text">同构映射定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%80%81%E6%98%A0%E5%B0%84%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.4.2.</span> <span class="toc-text">同态映射的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%80%81%E6%A0%B8%E5%AE%9A%E4%B9%89"><span class="toc-number">2.4.3.</span> <span class="toc-text">同态核定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%80%81%E6%A0%B8%E5%AE%9A%E7%90%86"><span class="toc-number">2.4.4.</span> <span class="toc-text">同态核定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%90%8C%E6%9E%84%E6%98%A0%E5%B0%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.4.5.</span> <span class="toc-text">自同构映射定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%90%8C%E6%9E%84%E7%BE%A4%E5%AE%9A%E4%B9%89"><span class="toc-number">2.4.6.</span> <span class="toc-text">自同构群定义</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E6%8D%A2%E7%BE%A4"><span class="toc-number">2.5.</span> <span class="toc-text">变换群</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%AE%E6%8D%A2%E5%AE%9A%E4%B9%89"><span class="toc-number">2.5.1.</span> <span class="toc-text">置换定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-7"><span class="toc-number">2.5.2.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%AF%E8%8E%B1%E5%AE%9A%E7%90%86"><span class="toc-number">2.5.3.</span> <span class="toc-text">凯莱定理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%A8%E9%81%93%E5%AE%9A%E4%B9%89"><span class="toc-number">2.5.4.</span> <span class="toc-text">轨道定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%B7%E5%90%91%E5%AD%90%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.5.5.</span> <span class="toc-text">迷向子群的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E7%90%86-2"><span class="toc-number">2.5.6.</span> <span class="toc-text">定理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%A4%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8E%E5%8D%8A%E7%9B%B4%E7%A7%AF"><span class="toc-number">2.6.</span> <span class="toc-text">群的直积与半直积</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BE%A4%E8%A1%A8%E7%A4%BA%E8%AE%BA%E7%9A%84%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">群表示论的基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%A4%E8%A1%A8%E7%A4%BA"><span class="toc-number">3.1.</span> <span class="toc-text">群表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4%EF%BC%88%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4%EF%BC%89%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.1.</span> <span class="toc-text">线性空间（向量空间）定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.2.</span> <span class="toc-text">线性变换定义</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
